@@ -72,16 +72,16 @@ form { padding: 3em; }
       }
       nav { float: none; width: auto; padding-left: 2em; }
       nav a { padding: 0.2em; margin-left: 0.3em; float: left; width: 23%; }
-      h2 { padding-left: 2em; padding-right: 2em; }
-      h3 { padding-left: 2em; padding-right: 2em; }
-      p { padding-left: 2em; padding-right: 2em; }
-      dl { padding-left: 2em; padding-right: 2em; }
+      h2 { padding-left: 0em; padding-right: 0em; }
+      h3 { padding-left: 0em; padding-right: 0em; }
+      p { padding-left: 0em; padding-right: 0em; }
+      dl { padding-left: 0em; padding-right: 0em; }
       main ul { margin-left: 2em; margin-bottom: 1em; }
       .clear { padding-left: 2em; }
-      #mathero { height: 150px; width: 80%; margin-left: auto;
+      #mathero { height: 0px; width: 80%; margin-left: auto;
         margin-right: auto;
       }
-      #loungehero { height: 150px; width: 80%; margin-left: auto;
+      #loungehero { height: 0px; width: 80%; margin-left: auto;
         margin-right: auto;
       }
 }
