@@ -1,70 +1,84 @@
-<!-- HOA Site
-       Author: Josiah Boyer
-       Date: 4/30/23 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Higley HOA</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="yoga.css">
+  <!-- Set tab name -->
+  <title>Higley HOA</title>
+  <meta charset="UTF-8">
+  <!-- Make mobile friendly -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="x.css">
+  <html style="font-size: 1.3em;">
 </head>
 <body>
-<div id="wrapper">
-<header>
-  <h1>Higley HOA</h1>
-</header>
-<nav>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="intro.html">Intro</a></li>
-    <li><a href="schedule.html">Schedule</a></li>
-    <li><a href="contact.html">Contact</a></li>
-    <li><a href="welcomevideo.html">Welcome Video</a></li>
-  </ul>
-</nav>
+  <div class="container">
+    <header>
+      <h1>Higley HOA</h1>
+    </header>
+    <!-- Create menu bar -->
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="calendar.html">Calendar</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- Main content/Body of the website -->
 <main>
-  <img src="gen1.png" class="floatleft" alt="AI Generated House in Arizona" width="240"
-  height="240">
- <h2>Welcome to the HOA page</h2>
- <p>
-   Welcome to the Homeowners Association (HOA) page! This is the go-to source for all information related to your community. As a member of the HOA, you have access to a variety of resources, including updates on upcoming events, community news, important announcements, and more. Whether you're a new resident or have been living in the community for years, this page is designed to keep you informed and engaged in the activities that make your community a great place to live. We encourage you to explore the site and stay connected with your neighbors and the HOA board.
-</p>
-<hr></hr>
-<p>
-  Before buying in Arizona HOA you will want to check out their reserve funds, budgets, bylaws as well as the rules and restrictions of the community.
-Make sure there is an adequate amount in the reserves in case of major problems such as: roof repairs, asphalt repairs, pool issues and/or property defects.
-</p>
-
-
-
-<h3>HOA Fee Includes</h3>
-        <ul>
-            <li>Common Area Maintenance</li>
-            <li>Lawn Care</li>
-        </ul>
-    <h3>Community Features</h3>
-        <ul>
-            <li>Common Area Maintenance</li>
-            <li>Lawn Care</li>
-        </ul>
-    <h3>HOA Fee</h3>
-        <h5><u>123$ per month*</u></h5>
-        <p>*All information provided is subject to change by each individual community and/or association. You should verify all information including HOA prices/dues.</p>
-
-<hr></hr>
-<p>Contact us here:</p>
- <div class="clear">
-  555 It-Is-The Way <br>
-  Gilbert, AZ 85297 <br>
-  <a id="mobile" href="tel:555-555-5555">555-555-5555</a> <br><br>
-  <span id="desktop">555-555-5555</span>
- </div>
-</main>
-<footer>
-Copyright &copy; 2023 Gilbert Homeowner's Association <br>
-  <a href="mailto:josiah@boyermail.com">Josiah Boyer</a>
-</footer>
+  <!-- Subheader 1 -->
+ <h2>Welcome to our community!</h2>
+ <dl>
+  <!-- Paragraph-ish 1 -->
+   <dd>
+      Welcome to Higley HOA! We are a friendly and vibrant community of homeowners who enjoy living in Gilbert, Arizona. Our neighborhood offers a variety of amenities and activities for residents of all ages and interests. Whether you like to relax by the pool, play basketball with your kids, or join a book club, you will find something to suit your lifestyle here. Our HOA is committed to maintaining the beauty and value of our homes and common areas, as well as fostering a sense of community and belonging among our members. We invite you to explore our website and learn more about our HOA, our events, our documents, and our contacts. If you have any questions or suggestions, please feel free to reach out to us. We look forward to hearing from you and welcoming you to our community!
+    </dd>
+  </dl>
+  <hr/>
+  <dl>
+    <dt>
+      <!-- Sub-subheader 2 -->
+      <strong>
+        Who We Are:
+      </strong>
+    </dt>
+    <!-- Image 1 -->
+    <img src="gen1.png" alt="AI generated image of Arizona houses" style="float: right; margin-left: 25px; max-width: 36%; max-height: 36%;">
+      <!-- Paragraph-ish 2 -->
+    <dd>
+      We are a friendly and vibrant community of homeowners who enjoy living in Gilbert, Arizona. Our neighborhood offers a variety of amenities and activities for residents of all ages and interests. Whether you like to relax by the pool, play basketball with your kids, or join a book club, you will find something to suit your lifestyle here.
+    </dd>
+  </dl>
+  <hr/>
+  <dl>
+    <dt>
+      <!-- Sub-subheader 3-->
+      <strong>
+        Our Commitments:
+      </strong>
+    </dt>
+      <!-- Paragraph-ish 3 -->
+    <dd>
+      Our HOA is committed to maintaining the beauty and value of our homes and common areas, as well as fostering a sense of community and belonging among our members. We invite you to explore our website and learn more about our HOA, our events, our documents, and our contacts. If you have any questions or suggestions, please feel free to reach out to us. We look forward to hearing from you and welcoming you to our community!
+    </dd>
+  </dl>
+  <hr/>
+        <!-- Subheader 4 -->
+  <h2>
+    Here's some beautiful views we're prepared to showcase our community:
+  </h2>
+<!-- A centered movie -->
+<video id="movie"  autoplay="autoplay" controls="controls" width="720" height="480" style="display: block; margin: 0 auto;">
+  <source src="movie.mp4" type="video/mp4" />
+   Your browser does not support the video tag.
+</video>
+  <hr/>
+ <!-- Footer -->
+  <footer>
+    <p>
+      © 2023 Boyer Inc. All rights reserved.
+    </p>
+  </footer>
 </div>
 </body>
 </html>

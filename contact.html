@@ -7,82 +7,71 @@
   <title>Higley HOA :: Contact</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="yoga.css">
+  <link rel="stylesheet" href="x.css">
+  <html style="font-size: 1.3em;">
 </head>
 <body>
-  <div id="wrapper">
+  <div class="container">
     <header>
       <h1>Higley HOA</h1>
     </header>
+    <!-- Create menu bar -->
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="intro.html">Intro</a></li>
-        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="calendar.html">Calendar</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <li><a href="welcomevideo.html">Welcome Video</a></li>
       </ul>
     </nav>
+    <!-- Main content/Body of the website -->
     <main>
-      <h2>Contact Gilbert Homeowner's Association</h2>
+      <h2><center>Higley HOA Contact Form</center></h2>
       <p>Required information is marked with an asterisk *.</p>
-
-      <form method="post" action="http://webdevbasics.net/scripts/yoga.php">
-        <label for="myName">* Name:</label><input type="text" name="myName" id="myName">
-        <label for="myEmail">* Email:</label><input type="email" name="myEmail" id="myEmail">
-        <label for="hearAboutUs">How did you hear about us?:</label><input type="text" name="hearAboutUs" id="hearAboutUs" list="hearAboutUsList">
-        <datalist id="hearAboutUsList">
-          <option>Google</option>
-          <option>Bing</option>
-          <option>Facebook</option>
-          <option>Friend</option>
-          <option>Radio Ad</option>
-        </datalist>
-        <label for="myComments">* Comments:</label>
-        <textarea name="myComments" id="myComments" rows="2" cols="20"></textarea>
-        <input type="submit" value="Send Now">
-      </form>
-   <img src="gen4.png" class="floatleft" alt="AI Generated House in Arizona" width="350"
-  height="350">
-   <div class="clear">
-  555 It-Is-The Way <br>
-  Gilbert, AZ 85297 <br>
-  <a id="mobile" href="tel:555-555-5555">555-555-5555</a> <br><br>
-  <span id="desktop">555-555-5555</span>
- </div>
-</main>
-<footer>
-  Copyright &copy; 2023 Gilbert Homeowner's Association <br>
-  <a href="mailto:josiah@boyermail.com">Josiah Boyer</a>
-</footer>
+      <img src="gen2.png" alt="AI generated image of Arizona houses" style="float: right; margin-right: 75px; max-width: 25%; max-height: 25%;">
+    <!-- form element -->
+<form method="post" action="process.php" onsubmit="return thankYou()"> 
+  <!-- name input -->
+  <label for="myName">* Name:</label>
+  <input type="text" name="myName" id="myName" required placeholder="John Smith"> 
+  <!-- email input -->
+  <label for="myEmail">* Email:</label>
+  <input type="email" name="myEmail" id="myEmail" required placeholder="john.smith@example.com">
+  <!-- hear about us input, yes -->
+  <label for="contactReason">* Contact reason:</label>
+  <input type="text" name="contactReason" id="contactReason" list="contactReasonList"> 
+  <!-- hear about us options -->
+  <datalist id="contactReasonList"> 
+    <option>Google</option> 
+    <option>Bing</option> 
+    <option>Facebook</option> 
+    <option>Friend</option>
+  </datalist> 
+  <!-- phone input -->
+  <label for="myPhone">Phone:</label>
+  <!-- regex pattern to verify proper syntax -->
+  <input type="tel" name="myPhone" id="myPhone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="555-555-5555"> 
+  <!-- address input -->
+  <label for="myAddress">Address:</label>
+  <input type="text" name="myAddress" id="myAddress" placeholder="123 Main Street"> 
+  <!-- comments input -->
+  <label for="myComments">* Comments:</label> 
+  <textarea name="myComments" id="myComments" rows="2" cols="20" required placeholder="Your message here">
+  </textarea> 
+  <!-- submit button -->
+  <input type="submit" value="Send Now"> 
+</form>
+<!-- form sumbission verification -->
+<script> 
+  function thankYou() { alert("Thank you for contacting us. We will get back to you soon."); return false; } 
+</script>
+<!-- Footer -->
+  <footer>
+    <p>
+      © 2023 Boyer Inc. All rights reserved.
+    </p>
+  </footer>
 </div>
 </body>
 </html>
- <style>
-    /* Style the form element */
-    form {
-      display: grid; /* Use a grid layout */
-      grid-template-columns: repeat(2, 1fr); /* Create two columns */
-      grid-gap: 10px; /* Add some space between grid items */
-      max-width: 600px; /* Set a maximum width for the form */
-    }
-
-    /* Style the label elements */
-    label {
-      font-weight: bold; /* Make the text bold */
-    }
-
-    /* Style the input and textarea elements */
-    input, textarea {
-      border: 1px solid gray; /* Add a border */
-      padding: 5px; /* Add some padding */
-    }
-
-    /* Style the submit button */
-    input[type="submit"] {
-      grid-column: span 2; /* Make it span two columns */
-      background-color: green; /* Set a background color */
-      color: white; /* Set a text color */
-      cursor: pointer; /* Change the cursor to a pointer */
-    }
-  </style>
