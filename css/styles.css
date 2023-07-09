@@ -1,1 +1,7 @@
-styles
+body {
+    font-family: sans-serif; /* set the font for the whole page */
+}
+
+.text-center {
+    text-align: center; /* align text to the center */
+}
