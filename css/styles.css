@@ -1,1 +1,24 @@
-styles
+body {
+    font-family: sans-serif; /* set the font for the whole page */
+}
+
+.text-center {
+    text-align: center; /* align text to the center */
+}
+
+#slideshow {
+    margin: 80px auto; /* set the margin for the slideshow container */
+    position: relative; /* set the position to relative so that the child divs can be positioned absolutely */
+    height: 240px; /* set the height of the slideshow container */
+    width: 240px; /* set the width of the slideshow container */
+    padding: 10px; /* set the padding for the slideshow container */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); /* add a shadow effect to the slideshow container */
+}
+
+#slideshow > div {
+    position: absolute; /* position the divs absolutely so that they can overlap each other */
+    top: 10px; /* set the top margin for the divs */
+    left: 10px; /* set the left margin for the divs */
+    right: 10px; /* set the right margin for the divs */
+    bottom: 10px; /* set the bottom margin for the divs */
+}
