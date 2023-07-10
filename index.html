@@ -1,44 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <!-- Check user screen size -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Information for being indexed by Google -->
-  <meta name="robots" content="index">
-  <!-- Keywords for SEO -->
-  <meta name="description" content="This is an example page description that summarizes the content and includes keywords.">
-  <!-- Set the title of the page -->
-  <title>Title</title>
-  <!-- Set the character encoding of the page -->
-  <meta charset="utf-8">
-  <!-- Link to the external stylesheet -->
-  <link rel="stylesheet" href="styles.css">
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Module 6 Project</title> 
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-  <!-- Create a wrapper div to contain the page elements -->
-  <div id="wrapper">
-    <!-- Create a header element for the page title -->
-    <header>
-      <h1>Header one</h1>
-    </header>
-    <!-- Create a nav element for the navigation menu -->
-    <nav>
-      <ul>
-        <!-- Create a list of links to other pages -->
-        <li><a href="index.html">Home</a></li>
-        <li><a href="1.html">1</a></li>
-        <li><a href="2.html">2</a></li>
-        <li><a href="3.html">3</a></li>
-      </ul>
-    </nav>
-    <!-- Create a main element for the main content of the page -->
-<main>
-</main>
-    <!-- Create a footer element for the page footer -->
-    <footer>
-    </footer>
-    <script src="js/main.js"></script>
-  </div>
+<body> 
+    <div class="container">
+        <h1 class="text-center">Module 6 Project</h1> 
+        <h2>If your number falls between 50 and 75, you've won. If not, keep trying.</h2> <!-- create another heading with the instructions -->
+        <p id="result"></p> <!-- create a paragraph with an id of result to display the message -->
+        <button onclick="playGame()">Play</button> <!-- create a button that calls the playGame function -->
+    </div>
+    <script src="main.js"></script> 
 </body>
 </html>
