@@ -1,23 +1,31 @@
-* {
-  box-sizing: border-box;
-}
- 
 body {
- 
   font-family: sans-serif;
 }
- 
-.text-center {
-  text-align: center;
+
+#load {
+  color: blue;
 }
- 
-main {
-  width: 1100px;
-  max-width: 100%;
-  margin: 0 auto;
+
+#resize {
+  color: green;
 }
- 
-header.header {
-  font-size: 32px;
-  font-weight: bold;
+
+#scroll {
+  color: red;
+}
+
+#click {
+  background: yellow;
+  border: none;
+  padding: 10px;
+}
+
+#mouse {
+  background: pink;
+  height: 100px;
+  width: 100px;
+}
+
+#image {
+  border: 2px solid black;
 }
