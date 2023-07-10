@@ -1,31 +1,29 @@
 body {
   font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
 }
-
-#load {
-  color: blue;
+ 
+h1 {
+  text-align: center;
 }
-
-#resize {
-  color: green;
+ 
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
 }
-
-#scroll {
-  color: red;
+ 
+form input {
+  margin: 0.5em 0;
+  padding: 0.5em;
+  border-radius: 5px;
 }
-
-#click {
-  background: yellow;
-  border: none;
-  padding: 10px;
-}
-
-#mouse {
-  background: pink;
-  height: 100px;
-  width: 100px;
-}
-
-#image {
-  border: 2px solid black;
+ 
+form input[type=submit]:active {
+  background-color: darkblue;
+  color: white;
 }
