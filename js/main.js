@@ -1,29 +1,51 @@
-//the following project requires the use of the following DOM APIs: querySelector(), getElementsByTagName(), querySelectorAll(), and getElementById(). In order to complete this project successfully, at one point or another, you will have used each of them.
- 
-//Using a DOM api, store the header's text in a variable
-var headerText = document.querySelector(".header").textContent; 
-//Using a DOM api, get the number of paragraphs in the page
-var paragraphCount = document.getElementsByTagName("p").length; 
-//Using a DOM api, get the number of heading tags used in the document
-var headingCount = document.querySelectorAll("h1, h2, h3, h4, h5, h6").length; 
-//Using a DOM api, get the number of list items being used in the unordered list
-var listItemCount = document.querySelector("ul").children.length; 
-//Use the correct DOM api to count the number of links being used in the page
-var linkCount = document.querySelectorAll("a").length;
-//set a variable to show the maximum number of links allowed on the page is 3
-var maxLinks = 3;
-//create an if/else statement that argues the following: if the total number of links on the page is greater than the maximum number of links allowed, then print the message "This is too many links. The limit is (include the variable for the maximum number of links)."
-var message; 
-if (linkCount > maxLinks) { // check if the link count is greater than the max links
-	message = " This is too many links. The limit is <b>" + maxLinks + "</b>."; // assign a message to the variable
-} else {
-	message = " The number of links is within the limit."; // assign a different message to the variable
-}
+//The following project requires the use of event types you've learned throughout the lesson.
 
-//create a summary of the article using the variables and display it in the summary div
-var summary = document.getElementById("summary"); // use getElementById to get the element with the id of summary
-var summaryText = "<br>The article title is <b>" + headerText + "</b><br><br>" + // create a summary text using the variables and line breaks
-	"This article contains <b>" + paragraphCount + "</b> paragraphs, and a total of <b>" + listItemCount + "</b> list items." +
-	" There are a total of <b>" + headingCount + "</b> heading tags and <b>" + linkCount + "</b> links used on the page." +
-	message; // add the message to the summary text
-summary.innerHTML = summaryText; // set the innerHTML of the summary element to the summary text
+//Come up with 10 different event types (i.e.; a load event, a keydown event, a click event, a mouseup event, etc.). Make sure it's at least 10.
+//From there, you're going to program these 10 different events into your JS page.
+//Deploy to your HTML page so the events are interactive.
+
+//get the elements by their ids
+var load = document.getElementById("load");
+var resize = document.getElementById("resize");
+var scroll = document.getElementById("scroll");
+var click = document.getElementById("click");
+var clickMessage = document.getElementById("click-message");
+var input = document.getElementById("input");
+var inputMessage = document.getElementById("input-message");
+var mouse = document.getElementById("mouse");
+var mouseMessage = document.getElementById("mouse-message");
+var image = document.getElementById("image");
+var imageMessage = document.getElementById("image-message");
+
+//add event listeners to each element
+window.addEventListener("load", function() { // listen for the load event on the window object
+  load.style.color = "white"; // change the color of the load paragraph to white
+});
+
+window.addEventListener("resize", function() { // listen for the resize event on the window object
+  resize.style.color = "white"; // change the color of the resize paragraph to white
+});
+
+window.addEventListener("scroll", function() { // listen for the scroll event on the window object
+  scroll.style.color = "white"; // change the color of the scroll paragraph to white
+});
+
+click.addEventListener("click", function() { // listen for the click event on the click button
+  clickMessage.textContent = "You clicked me!"; // change the text content of the click-message paragraph
+});
+
+input.addEventListener("input", function() { // listen for the input event on the input element
+  inputMessage.textContent = "You typed: " + input.value; // change the text content of the input-message paragraph to show what you typed
+});
+
+mouse.addEventListener("mouseover", function() { // listen for the mouseover event on the mouse div
+  mouseMessage.textContent = "You moved your mouse over me!"; // change the text content of the mouse-message paragraph
+});
+
+mouse.addEventListener("mouseout", function() { // listen for the mouseout event on the mouse div
+  mouseMessage.textContent = "You moved your mouse out of me!"; // change the text content of the mouse-message paragraph
+});
+
+image.addEventListener("dblclick", function() { // listen for the dblclick event on the image element
+  imageMessage.textContent = "You double clicked on me!"; // change the text content of the image-message paragraph
+});
