@@ -1,0 +1,31 @@
+body {
+  font-family: sans-serif;
+}
+
+#load {
+  color: blue;
+}
+
+#resize {
+  color: green;
+}
+
+#scroll {
+  color: red;
+}
+
+#click {
+  background: yellow;
+  border: none;
+  padding: 10px;
+}
+
+#mouse {
+  background: pink;
+  height: 100px;
+  width: 100px;
+}
+
+#image {
+  border: 2px solid black;
+}
