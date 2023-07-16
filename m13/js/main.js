@@ -46,6 +46,6 @@ document.getElementById("isValidBtn").addEventListener("click", function() {
     //open your finally statement
   finally {
     //create an alert that says "This will always run."
-    alert("This will always run."); 
+    alert("This will always run."); //should say, "Checking..."
   }
 });
