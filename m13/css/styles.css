@@ -1,0 +1,37 @@
+{
+  box-sizing: border-box; /* set the box sizing property to border box for all elements */
+}
+
+body {
+  font-family: sans-serif; 
+  min-height: 100%;
+  overflow-y: hidden; /* hide the vertical overflow */
+}
+
+.text-center {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* set the height to 100% of the viewport height */
+  flex-direction: column;
+}
+
+#test-input {
+  flex-direction: row; /* set the direction of the flex items to row */
+}
+
+input[type=text], button {
+  padding: 10px; 
+  font-size: 18px;
+}
+
+#isValidMsg {
+  color: red; 
+  margin: 1em; 
+  font-style: italic; 
+  font-weight: bold; 
+}
